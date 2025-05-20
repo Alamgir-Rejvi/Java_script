@@ -20,6 +20,7 @@ const user = {
 
 
  user.email = "alamgirrejvi65@gmail.com" // for override or modification.
+
  console.log(user.email)
 
 //  Object.freeze(user); // freeze is used for fixed
@@ -32,6 +33,7 @@ const user = {
 console.log(user) // this is for showing  whole object
 
 user.studyPlace ="new horizon" // this for including new information directly not override 
+
 delete user.nick // this for deleting information
 
 console.log(user.height); // height is not included in object so it will be showen undefined or not defined...
@@ -49,3 +51,17 @@ for(let key in user){
 for(let key in user){
     console.log(key +" :" +user[key]) //here 'key' is just a variable...
 };
+
+//function in object
+let customar = {
+    name: "alamgir",
+    Id: 1288420,
+    programme: "wdpf",
+    duration: function(){
+        console.log("I am learning function");
+
+    }
+}
+console.log(customar);
+customar.duration();
+console.log(typeof customar);
