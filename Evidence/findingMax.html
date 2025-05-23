@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Finding out maximum among three Number</h1>
+
+
+
+    <!-- <script>
+        let a = Number(prompt("Inter first number"));
+        let b = Number(prompt("Inter first number"));
+        let c = Number(prompt("Inter first number"));
+        
+        if(a>=b && a>=c){
+            document.write("Largest number :" +a);
+
+        }else if(b>=c){
+            document.write("Largest number :" +b);
+
+        }else{
+            document.write("Largest number :" +c);
+        };  
+    </script> -->
+    <br>
+    <!-- another way to find out max number -->
+    <script>
+        let num1 = parseFloat(prompt("Input first number")); // this part is same as privious.
+        let num2 = parseFloat(prompt("Input second number"));
+        let num3 = parseFloat(prompt("Input third number"));
+
+        let max = Math.max(num1,num2,num3); // here is the new method by Math.max...
+        document.write("The maximum number is :"+ max)
+    </script>
+</body>
+</html>
