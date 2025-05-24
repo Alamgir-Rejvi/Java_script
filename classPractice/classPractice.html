@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let x = prompt();
+
+      // switch (x){
+      //     case "0":
+      //         document.write("ligt on");
+      //         break;
+      //     case "1":
+      //         document.write("ligt off");
+      //         break;
+      //     default:
+      //         document.write("undefined value");
+      //
+      // }
+
+      // let m = prompt("enter your letter");
+      // let n = m.toUpperCase();
+
+      // switch (n) {
+      //     case "A":
+      //         document.write("v")
+      //         break;
+      //     case "B":
+      //         document.write("v")
+      //         break;
+      //     case "C":
+      //         document.write("v")
+      //         break;
+      //     case "D":
+      //         document.write("v")
+      //         break;
+      //     default:
+      //         document.write("consonant")
+      //         document.write("<br>")
+      // }
+
+      // let p = prompt("enter your letter");
+      // let q = p.toLowerCase();
+
+      // switch (q) {
+      //     case "a":
+      //         document.write("v")
+      //         break;
+      //     case "b":
+      //         document.write("v")
+      //         break;
+      //     case "c":
+      //         document.write("v")
+      //         break;
+      //     case "d":
+      //         document.write("v")
+      //         break;
+      //     default:
+      //         document.write("consonant")
+      // }
+
+      // const a = prompt();
+      // const d =34>4 ? "yes": "no";
+      // document.write(d);
+
+      // let num = prompt("enter number");
+
+      // if (num % 2 == 0){
+      //     document.write("even")
+      // } else{
+      //     document.write("odd")
+      // }
+
+      // let numb = prompt();
+      // const d = (numb % 2 == 0) ? "even":"odd"
+      // document.write(d)
+
+      // var point =prompt("input your result");
+      // switch(true){
+      //     case(point >= 90 && point <=100) :
+      //     document.write("A+")
+      //     break;
+
+      //     case(point >= 80 && point <=89) :
+      //     document.write("A")
+      //     break;
+      //     case(point >= 70 && point <=79) :
+      //     document.write("A-")
+      //     break;
+      //     case(point >= 60 && point <=69) :
+      //     document.write("B")
+      //     break;
+      // }
+
+      // var point = prompt("input ");
+
+      // if(point >= 90 && point <=100){
+      //     document.write("A=");
+
+      // }else if (point >= 80 && point <=89){
+      //     document.write("A=");
+
+      // } else if (point >= 70 && point <=79){
+      //     document.write("A=");
+      // }
+
+      // let a = 1;
+
+      // switch (a){
+      //     case 0 :
+      //         document.write("light on");
+      //         break;
+      //     case 1:
+      //         document.write("light off");
+      //         break;
+      //     default:
+      //         document.write("wrong input")
+      // };
+
+      // let b =prompt("Input Number");
+      // if(b==0){
+      //     document.write("light on");
+      // }else if(b==1){
+      //     document.write("light off");
+      // }else{
+      //     document.write("wrong input");
+      // }
+
+      // let point =prompt("input");
+
+      // switch(true){
+      //     case (point >= 90 && point <=100):
+      //         document.write("A+");
+      //         break;
+      //     case (point >= 80 && point <=89):
+      //         document.write("A");
+      //         break;
+      //     case (point >= 70 && point <=79):
+      //         document.write("A-")
+      //         break;
+      //     default:
+      //         document.write("Fail")
+      // }
+
+      // let num = prompt("Input Number")
+
+      // if(num>=90 && num<=100){
+      //     document.write("A+")
+      // }else if(num>=80 && num<=89){
+      //     document.write("A")
+      // }else if(num>=70 && num<=79){
+      //     document.write("A-")
+      // }else if(num>=60 && num<=69){
+      //     document.write("B")
+      // }else if(num>=50 && num<=59){
+      //     document.write("C")
+      // } else{
+      //     document.write("fail")
+      // }
+
+      const a = Number(prompt("Enter first number:"));
+      const b = Number(prompt("Enter first number:"));
+      const c = Number(prompt("Enter first number:"));
+
+      if (a > b && a > c) {
+        document.write("largest is :" + a);
+      } else if (b > c && b > a) {
+        document.write("largest is :" + b);
+      } else {
+        document.write("largest is :" + c);
+      }
+
+      // function findMax(num1, num2, num3) {
+      //     return Math.max(num1, num2, num3);
+      //   }
+
+      //   const max = findMax(10, 5, 8);
+      //   document.write(max);
+
+      const m = Number(prompt("Enter first number:"));
+      const n = Number(prompt("Enter first number:"));
+      const p = Number(prompt("Enter first number:"));
+
+      if (a > b) {
+        temp = a;
+        a = b;
+        b = temp;
+      }
+
+      if (a > c) {
+        temp = c;
+        c = a;
+        a = temp;
+      }
+
+      if (b > c) {
+        temp = b;
+        b = c;
+        c = temp;
+      }
+      document.write(a + "," + b + "," + c);
+    </script>
+  </body>
+</html>
