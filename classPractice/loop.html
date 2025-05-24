@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- for loop -->
+    <script>
+      for (var i = 1; i <= 10; i++) {
+        // initialization than condition than update.
+        document.write(i, "&nbsp &nbsp", "Mohammad Alamgir Rejvi", "</br>");
+      }
+    </script>
+    <br />
+    <br />
+
+    <!-- while loop -->
+    <script>
+      let w = 1; // initialization
+      while (w <= 10) {
+        // condition
+        document.write(w, " &nbsp It is 'while' loop </br>");
+        w++; // update(increment/decrement)
+      }
+    </script>
+    <br />
+    <br />
+
+    <!-- do while loop -->
+    <script>
+      let d = 1; //initialization
+      do {
+        document.write(d, "&nbsp This is do while </br>");
+        d++; //update(increment/decrement)
+      } while (d <= 10); // condition
+    </script>
+    <br /><br />
+
+    <!-- for...of -->
+    <script>
+      const arr = [1, 2, 3, 4, 5];
+      for (const element of arr) {
+        document.write(element, "&nbsp This is 'for...of'</br>");
+      }
+    </script>
+    <br /><br />
+
+    <!-- for...in -->
+    <script>
+      let obj = {
+        name: "Alamgir Rejvi",
+        student: "IDB",
+      };
+      console.log(obj);
+
+      //   for (let key in obj) {
+      //     document.write(key, ":&nbsp", obj[key], "</br>");
+      //   }
+    </script>
+  </body>
+</html>
