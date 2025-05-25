@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <script>
         let num1 =Number(prompt("Input first number"));
         let num2 =Number(prompt("Input second number"));
@@ -18,7 +18,6 @@
             document.write("Maximum number:", num3)
         };
     </script> -->
-
 
     <!-- <script>
         let num1 =Number(prompt("Input first number"));
@@ -46,7 +45,7 @@
     </script> -->
 
     <!-- 3rd answer -->
-     <!-- <script>
+    <!-- <script>
         // Javascript program counting vowels, consonants and show the occurrance.
 
         let letter = prompt("input")
@@ -71,9 +70,9 @@
                 document.write(check + "&nbsp is a consonant")
         }
      </script> -->
-     <!-- 4th answer -->
+    <!-- 4th answer -->
     <!-- .Write a program if a student get 50% marks is graded “B”,if get 60% is graded   “A”,if get 90% then    get A+ . -->
-     <!-- <script>
+    <!-- <script>
         let number =prompt("input result");
 
         if(number>=90){
@@ -90,10 +89,8 @@
         };
      </script> -->
 
-
-
-     <!-- 5th answer -->
-     <!-- how many is positive, how many negative ,how many are zero and sum up  numbers
+    <!-- 5th answer -->
+    <!-- how many is positive, how many negative ,how many are zero and sum up  numbers
       var data = [4,4,-4,-1,0,-8,0,45,9,79]; -->
     <!-- <script>
     var data = [4,4,-4,-1,0,-8,0,45,0,-3,9,79];
@@ -120,9 +117,68 @@
     </script> -->
 
     <!-- 6th answer /JavaScript program to find smallest number,larger number & sum up array of numbers-->
-     <script>
+    <!-- <script>
+        let data = [2,8,10,50,100,1];
+        var largest = data[0]
+        var smallest = data[0]
+        var sum = 0;
+        let i ;
 
-     </script>
+        for(i=0; i < data.length; i++){
+          sum = sum + data[i];
 
-</body>
+          if(largest<data[i]){
+              largest=data[i];
+          }else{
+              smallest=data[i];
+          }
+      }
+      document.write("largest number: &nbsp" +largest +"<br><br>");
+      document.write("smallest number: &nbsp" +smallest+"<br><br>");
+      document.write("Sum of numbers : &nbsp" +sum);
+    </script> -->
+
+
+
+    <!-- 7th answer -->
+    <script>
+        let num = prompt("Input Number")
+
+        if(num>=90 && num<=100){
+            document.write("Grade : A+")
+        }else if(num>=80 && num<=89){
+            document.write("Grade : A")
+        }else if(num>=70 && num<=79){
+            document.write("Grade : A-")
+        }else if(num>=60 && num<=69){
+            document.write("Grade : B")
+        }else if(num>=50 && num<=59){
+            document.write("Grade : C")
+        } else{
+            document.write("fail")
+        }
+    </script>
+
+    
+
+    <!-- 8and 9 th answer -->
+    <!-- <script>
+      let array1 = Number(prompt("number"));
+      let array2 = Number(prompt("number"));
+      let array3 = Number(prompt("number"));
+      let numbers = [array1, array2, array3];
+
+      numbers.sort((a, b) => a - b);
+      document.write("Ascending order :&nbsp", numbers, "<br>");
+    </script>
+    <script>
+      let arr1 = Number(prompt("number"));
+      let arr2 = Number(prompt("number"));
+      let arr3 = Number(prompt("number"));
+      let number = [arr1, arr2, arr3];
+
+      number.sort((a, b) => b - a);
+      document.write("Descending order :&nbsp", number, "<br>"); -->
+    </script>
+  </body>
 </html>

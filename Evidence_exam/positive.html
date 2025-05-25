@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positive</title>
+  </head>
+  <body>
+    <h3>Number of Positive, Nagetive, Zeros and Sum</h3>
+    <script>
+      var data = [8, 3, -6, -1, 0, -8, 0, 19, 4, 77, 0];
+      let positive = 0;
+      let nagetive = 0;
+      let zeros = 0;
+      let sum = 0;
+      let i;
+      for (i = 0; i < data.length; i++) {
+        sum = sum + data[i];
+        // s += data[i]; short form.
+        if (data[i] > 0) {
+          positive++;
+        } else if (data[i] < 0) {
+          nagetive++;
+        } else {
+          zeros++;
+        }
+      }
+      document.write("Positive numbers: &nbsp" + positive + "<br><br>");
+      document.write("Nagetive numbers: &nbsp" + nagetive + "<br><br>");
+      document.write("Zeros : &nbsp" + zeros + "<br><br>");
+      document.write("Sum of numbers : &nbsp" + sum);
+    </script>
+  </body>
+</html>
