@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        // aritmatic oparator = + , -, * , / , %, **, ++ , --
+        // assignment oparator "=" "+=" "-=" "*=" "/=" "%=" "**="
+
+        var num1 = prompt("Input first number : "); // for user input
+        var num2 = prompt("Input first number : "); // for user input
+
+        num1 = parseInt(num1,10) //to convert string to number from user input. 10 for decimal number
+        num2 = parseInt(num2,10) //to convert string to number from user input
+        
+        var sum,subs,multi , divi,modulas, increment, decrement ;
+
+        sum = num1 + num2;
+        document.write(num1 + "+" + num2 + "="+ sum +"<br>"+"<br>");
+
+        subs = num1 - num2;
+        document.write(num1 + "-" + num2 + "="+ subs +"<br>"+"<br>");
+
+        multi = num1 * num2;
+        document.write(num1 + "*" + num2 + "="+ multi +"<br>"+"<br>");
+
+        divi = num1 / num2;
+        document.write(num1 + "/" + num2 + "="+ divi +"<br>"+"<br>");
+
+
+        modulas = num1 % num2;
+        document.write(num1 + "%" + num2 + "="+modulas +"<br>"+"<br>");
+
+        
+    </script>
+    <script>
+        var num3 = Number(prompt("Input first number : ")); // for user input
+        var num4 = Number(prompt("Input first number : ")); // for user input
+
+        var increment, decrement;
+        
+        increment = num3++;
+        document.write("Inputed number"+ increment + "++" +"; incresed number" + "="+ num3 +"<br>"+"<br>");
+
+        decrement = num4--;
+        document.write("Inputed number"+ decrement + "--" +"; decresed number" + "="+ num4 +"<br>"+"<br>");
+
+    </script>
+</body>
+</html>
