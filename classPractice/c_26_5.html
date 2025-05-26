@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //factorial like 5!
+      let n = 5;
+      factor = 1;
+      let i;
+      for (i = 1; i <= n; i++) {
+        factor = factor * i;
+        // factor *= i;
+        console.log(factor);
+      }
+    </script>
+
+    <!-- object  -->
+    <script>
+      let mobile = {
+        name: "samsung",
+        color: "red",
+        model: 343,
+      };
+      mobile.model = 50; // updated with 50
+      Object.freeze(mobile);
+      mobile.model = 20; // this update will not work because of "freeze"
+      console.log(mobile);
+      //   document.write(mob.model["update version"]);
+    </script>
+
+    <script>
+      // object with function ...
+      //   const person = {
+      //     firstName: "Alamgir",
+      //     lastName: "Rejvi",
+      //     id: 1288420,
+      //     fullName: function () {
+      //       // here function is included for shortly call both "first and lastName" together..
+      //       return this.firstName + " " + this.lastName; // here "this" for refering object.
+      //     },
+      //   };
+
+      //   document.write(person.fullName());
+      //   console.log(person.fullName()); // here parameters"()" should be mentioned for function
+
+      const car = {
+        brand: "BMW",
+        wheels: 4,
+        maxSpeed: 100,
+        color: "black",
+
+        start: function () {
+          return this.brand + " car is stating" + "<br>";
+        },
+
+        stop: function () {
+          return this.brand + " car is stoped" + "<br>";
+        },
+
+        break: function () {
+          return this.brand + " car is taking break" + "<br>";
+        },
+
+        drive: function () {
+          return this.brand + " car is being drived" + "<br>";
+        },
+      };
+      //   console.log(car.start());
+      document.write(car.start());
+      document.write(car.stop());
+      document.write(car.break());
+      document.write(car.drive());
+    </script>
+
+    <script>
+      // if -else in object with function...
+
+      const person = {
+        firstName: "Bob",
+        age: 9,
+
+        checkDrivingEligibility() {
+          if (this.age >= 18) {
+            return this.firstName + "  is Eligible for driving license.";
+          } else {
+            return this.firstName + "  is Not eligible for driving license.";
+          }
+          s;
+        },
+      };
+
+      document.write(person.checkDrivingEligibility()); // Output: "Not eligible for driving license."
+    </script>
+
+    sc
+  </body>
+</html>
