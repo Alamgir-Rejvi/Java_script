@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- fibonacci series -->
+
+    <script>
+      var n = 10,
+        first = 0,
+        second = 1,
+        next = 0;
+      for (let i = 0; i <= n; i++) {
+        if (i <= 1) {
+          next = i;
+        } else {
+          next = first + second;
+          first = second;
+          second = next;
+        }
+        document.write(next + " ");
+      }
+    </script>
+
+    <!-- consturctor function for creating many object by one object format -->
+    <script>
+      function Person(name, age, id) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+      }
+      const alamgir = new Person("Alamgir", 28, 1288420);
+      const nishad = new Person("nishad", 28, 1288421);
+      const rasel = new Person("rasel", 28, 1288422);
+      const rafi = new Person("rafi", 28, 1288423);
+
+      console.log(alamgir.id);
+      console.log(nishad);
+      console.log(rasel);
+      console.log(rafi);
+    </script>
+
+    <!-- set and get method -->
+    <script>
+      const person = {
+        firstName: "Alamgir",
+        lastName: [],
+        id: 23,
+
+        getShow: function () {
+          console.log(this.lastName);
+        },
+        setData: function (a) {
+          this.lastName.push(a);
+        },
+      };
+      person.setData("Rejvi");
+
+      person.getShow();
+    </script>
+
+    <!-- <script>
+      const identy = {
+        fname: "Alamgir",
+        lname: "",
+
+        getShow: function () {
+          console.log(this.lname);
+        },
+        setData: function (b) {
+          this.lName.push(b);
+        },
+      };
+      identy.setData("");
+
+      person.getShow();
+    </script> -->
+
+    <!-- break and continue -->
+    <script>
+      for (let i = 1; i <= 100; i++) {
+        if (i == 10) {
+          break;
+        }
+        document.write(" " + i);
+      }
+    </script>
+
+    <script>
+      for (let i = 1; i <= 100; i++) {
+        if (i == 10) {
+          continue;
+        }
+        document.write(" " + i);
+      }
+    </script>
+  </body>
+</html>
