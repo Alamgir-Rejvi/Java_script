@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- constructors function example. constractors are intended for creating objects while regular function perform specific tasks -->
+    <script>
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.greet = function () {
+          document.write(
+            "hello , my name is " + this.name + "and my age is " + this.age
+          );
+        };
+      }
+      let person1 = new Person("Alamir", 28);
+      document.write(person1.greet());
+    </script>
+
+    <script>
+      function Identity(name, place) {
+        this.name = name;
+        this.workplace = place;
+        this.greet = function () {
+          document.write(
+            "hello , my name is " +
+              this.name +
+              "and workplace is " +
+              this.workplace
+          );
+        };
+      }
+      let Alamgir = new Identity("Alamgir", "IDB");
+      document.write(Alamgir.greet);
+    </script>
+
+    <script></script>
+  </body>
+</html>
