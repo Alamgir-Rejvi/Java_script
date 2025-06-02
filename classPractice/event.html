@@ -10,9 +10,23 @@
     <button onclick="fname()">click here</button>
 
     <script>
-      function fname() {
-        alert("hello!");
+      // function fname() {
+      //   alert("hello!");
+      // }
+      class ClsssName {
+        constructor(cname, cage, c_phone) {
+          this.name = cname;
+          this.age = cage;
+          this.phone = c_phone;
+        }
+        show() {
+          document.write("my name is" + this.name + "and my age is" + this.age);
+        }
       }
+      const wdpf = new Course("Farhana", 25, 1288267);
+      wdpf.show();
+      // document.write("<br>")
+      document.write("this is" + wdpf.name + "and her is age" + this.c_phone);
     </script>
   </body>
 </html>

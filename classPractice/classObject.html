@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class ClassName {
+        constructor(cname, cage, c_phone) {
+          (this.name = cname), (this.age = cage), (this.phone = c_phone);
+        }
+        show() {
+          // here show is a method...
+          document.write(
+            "My name is " + this.name + " and my age is " + this.age
+          );
+        }
+      }
+      const a = new ClassName("Alamgir", 28, 36747547);
+      a.show();
+      document.write("<br>");
+      document.write(
+        "This is " + a.name + " and his age is " + a.age + a.phone
+      );
+    </script>
+  </body>
+</html>
