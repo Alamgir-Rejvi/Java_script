@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      class Mobile {
+        constructor(name, ram, rom, sim) {
+          (this.name = name),
+            (this.ram = ram),
+            // (this.rom = rom),
+            // (this.sim = sim);
+        }
+        show() {
+          document.write(
+            "This mobile name is " + this.name + " ram is " + this.ram
+          );
+        }
+      }
+      const b = new Mobile (samgung, 4,);
+      b.show()
+    </script> -->
+
+    <script>
+      class Car {
+        constructor(brand, model, color) {
+          //   this.price = price;
+          this.brand = brand;
+          this.model = model;
+          this.color = color;
+        }
+        show() {
+          return (
+            this.brand +
+            " " +
+            this.color +
+            "is running " +
+            "model is " +
+            this.model
+          );
+        }
+      }
+
+      //   const a = new Car(Nishan, w1955, red);
+      //   a.show();
+      document.write("<br>");
+      //   document.write();
+
+      class Bike extends Car {
+        constructor(dsk, light, brand, model) {
+          super(brand, model);
+          (this.disk = dsk), (this.headlight = light);
+        }
+        run() {
+          document.write("This bike is so first");
+        }
+      }
+      const bike = new Bike("sd ", "halogen", "Nishan", 1200);
+
+      document.write("<br>");
+      //   console.log(bike);
+      console.log(bike.show());
+    </script>
+  </body>
+</html>
