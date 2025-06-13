@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" name="f">
+      <label for="name">Name:</label> <br />
+      <input type="text" name="n" /> <br />
+      <label for="email">Email:</label> <br />
+      <input type="email" name="email" /> <br />
+      <!-- <label for="address" name="addr">Address:</label><br />
+      <textarea name="addr" id="addr" name="add"></textarea><br /> -->
+      <input type="reset" value="Reset" /> <br />
+      <input type="submit" value="Submit" onclick="my_function" />
+    </form>
+
+    <script>
+      function my_function() {
+        var name = document.f.n.value;
+        var name = document.f.email.value;
+        doc = open(" ", " ", "width:400px , height : 400px");
+        with (doc.document) {
+          write("name:" + name);
+          write("<br>");
+          write("email:" + email);
+          write("<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fruits = [
+        "banana",
+        "orange",
+        "apple",
+        "banana",
+        "orange",
+        "apple",
+        "apple",
+        "banana",
+        "orange",
+        "apple",
+      ];
+
+      //let index = fruits.indexOf("orange"); // indexof for finding first index of item.
+
+      let index = fruits.lastIndexOf("orange"); // lastIndexOf for finding last index of item.
+      console.log(index);
+    </script>
+    <script>
+      var arr = ["A", "B", "C", "D", "E", "F", "G"];
+
+      let result = arr.slice(2, 5); //with start ,end
+      console.log(result); // output = c, d, e...
+
+      let result1 = arr.slice(5); // with only start
+      console.log(result1); // output = f,g
+
+      let result2 = arr.slice(-6, -3); // with negative start and end index
+      console.log(result2); // output = b, c, d
+
+      let result3 = arr.slice(-4); // with only negative start index
+      console.log(result3); // output = d, e, f, g
+
+      let result4 = arr.slice(2, -2); // with positive and negative index
+      console.log(result4); // output = c , d, e
+    </script>
+
+    <script>
+      var arr = ["A", "B", "C", "D", "E", "F", "G"];
+      console.log(arr);
+      arr.splice(3, 0, "Alamgir");
+      console.log(arr);
+
+      var arr = ["A", "B", "C", "D", "E", "F", "G"];
+      console.log(arr);
+      arr.splice(3, 3, "Alamgir");
+      console.log(arr);
+    </script>
+
+    <!-- for.Each -->
+    <script>
+      var arr = [1, 2, 3, 4, 5, 6];
+      arr.forEach((num) => {
+        console.log(num * 2);
+      });
+    </script>
+
+    <!-- prime number -->
+    <script>
+      let n = parseInt(prompt("Input a number"));
+
+      let prime = true;
+      if (n == 0 || n == 1) {
+        document.write((n = "This is not a prime number or composite"));
+      } else {
+        for (let i = 2; i < n; i++) {
+          if (n % i == 0) {
+            prime = false;
+            break;
+          }
+        }
+        if (prime == true) {
+          document.write(n + "is a prime number");
+        } else {
+          document.write(n + "is not a prime number");
+        }
+      }
+    </script>
+  </body>
+</html>
