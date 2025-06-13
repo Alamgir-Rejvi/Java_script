@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Practice on function parameter and argument -->
+    <script>
+        // task - 1 ; sum of the age of father and son 
+        function ageSum(fAge, sAge) {
+            let sum = fAge + sAge
+            console.log(sum);
+        }
+        ageSum(40, 14)
+
+
+
+        // we can this with return
+        function ageTotal(fAge, sAge) {
+            return fAge + sAge;
+        }
+        let sum = ageTotal(40, 10);
+        console.log(sum);
+
+
+
+        // task - 2 ; make a calculator with add , subtraction , multification and division
+        function cal(num1, num2) {
+
+            let add = num1 + num2;
+            let subt = num1 - num2;
+            let mal = num1 * num2;
+            let div = num1 / num2;
+
+            console.log(add);
+            console.log(subt);
+            console.log(mal);
+            console.log(div);
+        }
+        cal(20, 15);
+
+
+
+
+        // task - 3 ; sum of 3 subject;
+        function total(a, b, c) {
+            let sum = a + b + c;
+            console.log(sum);
+        }
+        total(80, 85, 75);
+
+
+
+
+        // task - 4 ; age calculate
+        function myAge(presentYear, myYear) {
+            let age = presentYear - myYear;
+            console.log(age);
+        }
+        let present = 2025;
+        let birth = 1997;
+        myAge(present, birth)
+
+
+
+
+        // task - 5 ; divide 
+        function lao(have, price) {
+            return have / price;
+        }
+        let show = lao(100, 30);
+        console.log(show);
+
+
+
+
+        // task - 6 ; find avarage of 4 numbers
+        function avarage(num1, num2, num3, num4) {
+            // let output = (num1 + num2 + num3 + num4) / 4;
+            // console.log(output);
+            console.log("The avarage of four numbers : " + (num1 + num2 + num3 + num4) / 4)
+        }
+        avarage(10, 10, 10, 2);
+
+
+
+        // task - 7 ; 
+
+
+
+        // task - 8 ; My age after 100 year
+        function after100(birthYear) {
+            let year = birthYear + 100;
+            console.log(year)
+        }
+        after100(1997);
+
+
+
+
+        // task - 9 ; monthly hours of mobile use
+        function mobileUseMonthly(usePerDay) {
+            let hours = usePerDay * 30;
+            console.log(hours);
+        }
+        mobileUseMonthly(3);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const Price = 7000;
+        const Discount = Price / 100 * 10; // 10% discount...
+        const DiscountedPay = Price - Discount;
+        if (Price >= 5000) {
+            // const discount = price / 100 * 10; (this part can be here)
+            // const discountedPay = price - discount;
+            console.log(DiscountedPay);
+        } else {
+            console.log(Price)
+        }
+    </script>
+
+
+
+    <script>
+        const price = 4000;
+        // const discount = price / 100 * 10; // 10% discount...
+        // const discountedPay = price - discount; (this part can be here)
+
+        if (price >= 5000) { // condition of 5000 should be mentioned first becouse js execute top to bottom
+            const discount = price / 100 * 10;  // 10% discount...
+            const discountedPay = price - discount; // price after discount
+            console.log(discountedPay);
+        }
+        else if (price >= 2500) { // anther condition on 5% discount
+            const discount = price / 100 * 5;
+            const discountedPay = price - discount;
+            console.log(discountedPay);
+        } else {
+            console.log(price)
+        }
+    </script>
+
+
+    <!-- in this code , else if part will not be executed becouse if condition will be executed first , so highest value-condition should be mentioned first. -->
+    <!-- <script>
+        const price = 7000;
+        // const discount = price / 100 * 10; // 10% discount...
+        // const discountedPay = price - discount; (this part can be here)
+
+        if (price >= 2500) { // anther condition on 5% discount
+            const discount = price / 100 * 5;
+            const discountedPay = price - discount;
+            console.log(discountedPay);
+        }
+        else if
+            (price >= 5000) {
+            const discount = price / 100 * 10;  // 10% discount...
+            const discountedPay = price - discount;
+            console.log(discountedPay);
+        } else {
+            console.log(price)
+        }
+    </script> -->
+
+
+
+    <!-- Final Practice on else if from ph book -->
+    <script>
+        // task - 1;
+        // I offer 15% discount on buying more than 6000 tk, 5% on more than 3000 tk , otherwise No discount
+
+        const priceFriend = 4500; // my friend buy product of 4500 cost
+        if (priceFriend > 6000) {
+            const discount = priceFriend / 100 * 15;
+            const pay = priceFriend - discount;
+            console.log(pay);
+
+        } else if (priceFriend > 3000) {
+            const discount = priceFriend / 100 * 5;
+            const pay = priceFriend - discount; // he has to pay this discounted amaount...
+            console.log(pay); 
+
+        } else{
+            console.log(priceFriend)
+        } // output : 4275 tk
+    </script>
+
+    <script>
+        // task - 2;
+        // if age is less than 12, he will eat free, if age above 60 , he will get 50% , otherwise full payment.
+        const ageIs = 28;
+        if (ageIs < 12) {
+            console.log("Eat without any payment")
+        } else if (ageIs > 60) {
+            console.log("He will get 50% discount on food")
+        } else {
+            console.log("pay full payment without discount")
+        } // output : pay full payment without discount.
+    </script>
+
+    <script>
+        // task - 3;
+        // if an accountant has less than 1000 tk , tell him to do deposit. if he has between 1000 and 5000 tk, say him enjoy life bindasly and if he has more than 5000tk , tell him to biya kr...
+
+        const balance = 4000;
+        if (balance > 5000) {
+            console.log(" You are a rich , biya kor");
+
+        }else if (balance <= 5000 && balance >= 1000){
+            console.log("enjoy life bindasly");
+
+        } else{
+            console.log("do deposit")
+        } // output : enjoy life bindasly
+    </script>
+
+    <script>
+        // task - 4;
+        // condition: less than 50 is fail. between 50 and 80 is pass , and above 80 is A+ ;
+
+        const marks = 72;
+        if (marks > 80) {
+            console.log("You got A+");
+
+        } else if (marks <=80 && marks >= 50) {
+            console.log("Pass");
+
+        } else {
+            console.log("Fail");
+        } // output : Pass
+    </script>
+    <script>
+        // task - 5;
+        // condition: less than 100 page book is Small book. between 100 and 500 page is Mid-size book , and above 500 page is Heart-attack size book ;
+
+        const bookSize =90;
+        if (marks > 500) {
+            console.log("Heart-attack size book");
+
+        } else if (marks <=500 && marks >=100) {
+            console.log("Mid-size book");
+
+        } else {
+            console.log("Small book");
+        } // output : Small book
+    </script>
+</body>
+
+</html>

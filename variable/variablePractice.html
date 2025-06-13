@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- variable practice from ph book  -->
+
+    <script>
+        const eggPrice = 50;
+        const onionPrice = 20;
+        const total = eggPrice / onionPrice;
+        //document.write("Total cost : " + total);
+        document.write(eggPrice+onionPrice);
+    </script>
+
+    <script>
+        let a = 10;
+        let b = 3;
+        document.write("<br>", "<br>" + a/b);
+        document.write("<br>", "<br>", a % b);
+
+        let c = "alamgir";
+        let d = "rejvi";
+        document.write("<br>", "<br>" +c+d);
+
+        let e = 10;
+        let f = "3";
+        document.write("<br>", "<br>" + e+f);
+    </script>
+
+
+    <script>
+        // Practice - 01
+
+
+        let earnedTaka = 100;
+        let expensedTaka = 40;
+        let remainingTaka = earnedTaka - expensedTaka ;
+        document.write(remainingTaka);
+
+
+
+        document.write("<br>", "<br>")
+        // Practice - 02
+
+        let havingPencil = 10;
+        let usingEveryTime = 2;
+        let totalUsing = havingPencil / usingEveryTime;
+        document.write("<br>", "<br>")
+        document.write(totalUsing);
+
+
+
+        document.write("<br>", "<br>")
+        // Practice - 03
+
+        let havingMoney = 60;
+        let expensedEveryTime = 15;
+        let totalUsingTime = havingMoney / expensedEveryTime;
+        document.write(totalUsingTime);
+        document.write("<br>", "<br>")
+        let remainingMoney = havingMoney % expensedEveryTime;
+        document.write(remainingMoney);
+
+
+
+        document.write("<br>", "<br>")
+        // Practice - 04
+
+        let string1 = "Hello";
+        let string2 = "World";
+        document.write(string1+string2);
+
+
+
+        document.write("<br>", "<br>")
+        // Practice - 05
+
+        let chal = 153;
+        let dal = 261;
+        let totalKg = chal + dal;
+        document.write(totalKg);
+
+
+        document.write("<br>", "<br>");
+        // Practice - 06
+
+        let havingTaka = 700;
+        let eveyTimeExpansed = 75;
+        let totalUseTime = havingTaka / eveyTimeExpansed;
+        // let totalUseTimes = parseInt(totalUseTime);
+        let remainTaka = havingTaka % eveyTimeExpansed;
+
+
+        document.write(parseInt(totalUseTime));  // method 1 for avoiding decimal number using parseInt.
+        document.write("<br>");
+        document.write(Math.floor(totalUseTime));  // method 2 for avoiding decimal number using Math.floor.
+        document.write("<br>");
+        document.write((havingTaka / eveyTimeExpansed) | 0); //method 3 for avoiding decimal number Using bitwise OR (| 0)
+        document.write("<br>");
+        document.write(~~(havingTaka / eveyTimeExpansed)); // method 4 for avoiding decimal number Using double tilde (~~).
+        document.write("<br>");
+        document.write(remainTaka);
+
+
+        document.write("<br>", "<br>");
+        // Practice - 07
+
+        let havingChal = 480;
+        let eatingEveryDay = 4;
+        let daysWillGone = havingChal / eatingEveryDay;
+        document.write(daysWillGone);
+        document.write("<br>");
+
+        // finding month
+        let daysWillGo = 120;
+        let daysPerMonth = 30;
+        let findingMonth = daysWillGo / daysPerMonth;
+        document.write(findingMonth);
+
+    </script>
+</body>
+</html>

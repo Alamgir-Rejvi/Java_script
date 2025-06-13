@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nested condition -->
+    <script>
+        // condition: more than 300 tk , go to market. less than 300 tk , stay home. after going to market , if popcon price is less than or equal , u will eat it.otherwise not eat.
+
+        let havingMoney = 600;
+        // let popcon = 50; it will be global variable if it is declared here.
+        if (havingMoney >= 300) {
+            console.log("You can go to market");
+            let popcon = 60;
+            if (popcon <= 50) {
+                console.log("You can eat popcon");
+            } else {
+                console.log("You can not eat popcon");
+            }
+        } else {
+            console.log("You will stay home");
+        } // output : You can go to market but You can not eat popcon.
+    </script>
+
+    <!-- task - 1 from ph book-->
+    <script>
+        const givingInvitation = false;
+
+        if (givingInvitation === true) {
+            console.log("I will go to friend's home");
+
+            const havingMoney = 2000;
+            if (havingMoney > 1000) {
+                console.log("I will give him a gift")
+            } else {
+                console.log("No gift")
+            }
+        } else {
+            console.log("I will remove him from friend list");
+        } // output : I will remove him from friend list.
+    </script>
+
+
+    <!-- task - 2 from ph book-->
+    <script>
+        const teaByGuest = true;
+
+        if (teaByGuest === true) {
+            console.log("Offer guest to take tea");
+
+            const takeBiscit = false;
+            if (takeBiscit === true) {
+                console.log("take biscit");
+
+            } else {
+                console.log("take only tea");
+
+            }
+        } else {
+            console.log("See star jalsha");
+        } // output : Offer guest to take tea and take only tea
+    </script>
+
+
+    <!-- task - 3 from ph book-->
+    <script>
+        let isAccActive = true;
+
+        if (isAccActive === true) {
+
+            let isSubscribed = false;
+            if (isSubscribed === true) {
+                console.log("You are welcome to see Premium version");
+
+            } else {
+                console.log("See free version please");
+
+            };
+        } else {
+            console.log("Activate account")
+        } // output : See free version please;
+    </script>
+
+
+    <!-- task - 4 from ph book-->
+    <script>
+        let isFoodInFreeze = false;
+
+        if (isFoodInFreeze === true) {
+            console.log("Hit the food");
+
+        } else {
+            let isFDappActive = false;
+            if (isFDappActive === true) {
+                console.log("Order Food");
+
+            } else {
+                console.log("Keep yourself fast");
+            };
+        }; // output : Keep yourself fast
+    </script>
+
+
+
+    <!-- task - 5 from ph book-->
+    <script>
+        let guestNumber = 120;
+
+        if (guestNumber > 100) {
+
+            let isWithGift = false;
+            if (isWithGift === true) {
+                console.log("Let's party all night");
+
+            } else {
+                console.log("I will party with myself");
+            };
+        } else {
+            console.log("Dismiss Party")
+        } // output : I will party with myself
+
+    </script>
+</body>
+
+</html>

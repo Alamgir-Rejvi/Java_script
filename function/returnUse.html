@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- practice on using return in a function from ph book -->
+    <script>
+        // task - 1 ; write a function : if the number is greater than 10 , return true; otherwise false;
+        function output(number) {
+            if (number > 10) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let feedback = output(30);
+        console.log(feedback);
+        // output : true
+
+
+
+        // task - 2 ;
+        function number(num) {
+            if (num % 13 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let res = number(30);
+        console.log(res);
+        // output : false
+
+
+        // task - 3 ;
+        function cost(rice, curry, drink) {
+            return rice + curry + drink;
+        }
+        let bill = cost(50, 100, 60); // function is called with number value;
+        console.log(bill);
+
+
+
+        // task - 3 ;
+        let rice = 50;
+        curry = 100;
+        drink = 50;
+        function cost(rice, curry, drink) {
+            return rice + curry + drink;
+        }
+        let pay = cost(rice, curry, drink);// function is called with string value;
+        console.log(pay);
+
+
+
+        // task - 4;
+        function canVote(age) {
+            if (age > 18) {
+                return "Eligible for voting";
+            } else {
+                return "Not Eligible";
+            }
+        }
+        let show = canVote(10);
+        console.log(show);
+
+
+
+
+        // task - 5;
+        let para;
+        function findLength(para) {
+            para = "It's a string";
+            return para;
+        }
+        let see = findLength(para);
+        let long = see.length;
+        console.log(long)
+
+
+
+        // task - 6;
+        function avarage(num1, num2, num3) {
+            let total = (num1 + num2 + num3) / 3;
+            return total;
+        }
+        let ava = avarage(10, 20, 30);
+        console.log(ava);
+
+
+        // task - 7; give a number , check it nagetive or not , if nagetive multify it by -1 than return ...
+        function isNag(n) {
+            if (n < 0) {
+                return n * (-1);
+            } else {
+                return "It's not a nagetive number";
+            }
+        }
+        let take = isNag(4);
+        console.log(take);
+    </script>
+
+
+
+    <script>
+
+        function doMath(num1, num2) {
+            const sum = num1 + num2;
+            const diff = num1 - num2;
+            const multiply = sum * diff;
+            const result = multiply / 2;
+            return result;
+        }
+        const result = doMath(10, 5);
+        console.log(result); // Output: 37.5
+
+    </script>
+
+    <script>
+        // check this string is even or odd number
+        // method 1 with return
+        function evenSizedString(str) {
+            const size = str.length;
+
+            if (size % 2 === 0) {
+                return true
+            } else {
+                return false;
+            }
+        }
+        const isEven = evenSizedString('Human');
+        console.log(isEven); // Output: false
+
+        
+
+        // method 2 without return
+        function chec(str) {
+            let lenn = str.length;
+            if (lenn % 2 === 0) {
+                console.log("string length is :", lenn, "so it's an", "even string")
+            } else {
+                console.log("string length is :", lenn, "so it's an", "odd string")
+            }
+        }
+        chec("I love  her");
+
+    </script>
+</body>
+
+</html>

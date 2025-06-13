@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Practice on dot notation and bracket notation in object from ph book-->
+    <script>
+        // task - 1; using dot notation
+        const player = {
+            name: "Alamgir",
+            age: 28,
+            sports: "cricket",
+            team: "Ajaira",
+        }
+        console.log(player.team)
+
+        
+
+        // task - 2; using dot and bracket notation
+        const laptop = {
+            brand: "Dell",
+            price: 30000,
+            'hard Disc': "1TB",
+            ram: 16,
+            color: "gray",
+            screenSize: '15"'
+        }
+        console.log(laptop.screenSize);
+        console.log(laptop['hard Disc']);
+
+
+
+        // task - 3; using bracket notation
+        const favPlace = {
+            name: "coxbazar",
+            distance: "400 km",
+            popularity: "high"
+        }
+        console.log(favPlace["popularity"]);
+
+
+
+
+        // task - 4;
+        const college = {
+            name: "abc",
+            established: 1960,
+            group: ["art", "commerce", "science"]
+        }
+        console.log(college.group[1]); // by dot notation
+        console.log(college['group'][1]); // by bracket notation
+
+
+
+
+        // task - 5; nested object
+        const family = {
+            father: {
+                name: "Mohammad Safiqul Islam",
+                age: 62,
+                occupation: "Carpenter",
+                workPlaces: ["Dhaka", "Cumilla", "Banderban"]
+            },
+
+            mother: {
+                name: "Mafija Khatun",
+                age: 56,
+                occupation: "House wife",
+            },
+        }
+        console.log(family.father["workPlaces"][1]) // output : cumilla using both dot and bracket
+        console.log(family.mother.age); // 56
+        console.log(family.father.age); // 62
+        console.log(family.mother.age + family.father.age) // by only dot notation , sum is 118
+        console.log(family['mother']["age"] + family.father.age); // by bracket and dot notation , sum is 118
+    </script>
+</body>
+</html>

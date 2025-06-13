@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Practice part from ph book -->
+    <script>
+        // task - 1 ; teacher object
+        const teacher = {
+            name: "Farhana Akter Luky",
+            'tech Subject': ['Programmingg', 'Pming', 'rogrammingg'],
+            age: 32,
+            house: "Damra"
+        };
+        console.log(teacher.name);
+        console.log(teacher['tech Subject']);
+
+        teacher.name = "Farhana Akter Lucky" // to change value, we can use "dot notation" and "bracket notation" 
+        teacher["house"] = "Demra"
+
+        console.log(teacher.name);
+        console.log(teacher['house']);
+
+        // task - 2 ; tree object 
+        const tree = {
+            name: "Anar",
+            age: 13,
+            fruit: "Anarfal",
+            location: "beside house"
+        }
+
+
+        // task - 3 ; my father
+        const myFather = {
+            name: "Mohammad Shafiqul Islam",
+            present: false,
+            wasAge: 78,
+            occupation: "carpanter",
+            behaivor: "First class",
+            heart: "so soft but angriable",
+            image: "Positive to all"
+        }
+
+
+        // task - 3 ; motorbike object (copied from online)
+        const motorbike = {
+            brand: "Honda",
+            model: "CBR600RR",
+            year: 2023,
+            color: "Red",
+            engine: {
+                type: "Inline-4",
+                displacement: "599cc",
+                horsepower: 119,
+            },
+            features: ["ABS", "LED lights", "Digital display"],
+            startEngine: function () {
+                console.log("Engine started!");
+            },
+            stopEngine: function () {
+                console.log("Engine stopped!");
+            },
+        };
+
+        console.log(motorbike.brand); // Output: Honda
+        console.log(motorbike.engine.displacement); // Output: 599cc
+        motorbike.startEngine(); // Output: Engine started!
+        console.log(motorbike.features[2]);
+
+
+
+        // task - 4 ; laptop object (copied from online)
+        const laptop = {
+            brand: "Dell",
+            model: "XPS 13",
+            processor: "Intel Core i7",
+            ram: 16,
+            price: 1399.99,
+            features: {
+                touchScreen: true,
+                backlitKeyboard: true,
+            },
+            accessories: ["Mouse", "Charger"],
+            powerState: "on", // or "off", "charging", etc.
+
+            turnOn: function () {
+                this.powerState = "on";
+                console.log("Laptop is turning on...");
+            },
+
+            turnOff: function () {
+                this.powerState = "off";
+                console.log("Laptop is turning off...");
+            },
+
+            chargeBattery: function (percentage) {
+                if (this.batteryLevel + percentage <= 100) {
+                    this.batteryLevel += percentage;
+                    console.log("Charging... Battery level is now:", this.batteryLevel, "%");
+                }
+                else {
+                    this.batteryLevel = 100;
+                    console.log("Charging... Battery is full (100%)");
+                }
+            },
+
+            displayDetails: function () {
+                console.log("Brand:", this.brand);
+                console.log("Model:", this.model);
+                console.log("Screen Size:", this.screenSize, "inches");
+                console.log("Processor:", this.processor);
+                console.log("RAM:", this.ram, "GB");
+                console.log("Storage:", this.storage);
+                console.log("Operating System:", this.operatingSystem);
+                console.log("Price:", this.price);
+                console.log("Features:", this.features);
+                console.log("Accessories:", this.accessories);
+            }
+        };
+
+        console.log(laptop.brand); // Output: Dell
+        laptop.turnOn();          // Output: Laptop is turning on...
+        laptop.chargeBattery(25);    // Output: Charging... Battery level is now: 85 %
+        // laptop.displayDetails(); // Prints all details
+    </script>
+</body>
+
+</html>

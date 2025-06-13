@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Final Practice on logical not from ph book -->
+    <script>
+        // task - 1 ;
+        // If someone buy more than 3000tk , then he will get 500 tk cashback , otherwise no cashback . print this with tarnary operator...
+
+        let cashBack = 4000;
+        cashBack >= 3000 ? console.log(500) : console.log(0);
+        // output : 500
+
+
+
+        // task - 2 ;
+        // if age is more than 15 , then show "Teenager" , and less than 15 ,show "child"...
+        let age = 10;
+        age >= 15 ? console.log("Teenager") : console.log("Child");
+        // output : child.
+
+
+        // task - 3 ;
+        // If the value of isLoggedIn is true , show Welcome back and if false then show Please login...
+
+        let isLoggedIn = false;
+        isLoggedIn == true ? console.log("Welcome back!") : console.log("Please login");
+        // output : Please login
+
+
+
+        // task - 4 ;
+        // If tank is full , show "Ready for a long drive" otherwise show "Fill the tank"
+        let isFullTank = "no";
+        isFullTank == "Full" ? console.log("Ready for a long drive") : console.log("Fill the tank");
+        // output : Fill the tank.
+
+    </script>
+
+    <script>
+        // task - 5 ;
+        // if U passed exam then show "Party time" otherwise show "I will be serious in next semester"
+
+        let isPassedExam = true; //with tarnary method
+        isPassedExam === true ? console.log("Party time") : console.log("I will be serious in next semester");
+        // output : Party time.
+
+        // task 5 with if-else
+        let isPassed = false;
+        if (isPassed === true) {
+            console.log("Party time");
+        }else {
+            console.log("I will be serious in next semester");
+        }
+
+
+        // task 5 with logical not
+        let isPassedexam = true;
+        if (isPassedexam) {
+            console.log("Party time");
+        }else {
+            console.log("I will be serious in next semester");
+        }
+    </script>
+</body>
+
+</html>

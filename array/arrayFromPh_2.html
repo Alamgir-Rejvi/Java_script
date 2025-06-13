@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // push method
+        let num = [10, 20, 30, 40, 50];
+        num.push(60);
+        console.log(num)
+
+        // push method
+        let friends = ["shajib" , "shagor" , "shakib" , "shohel"];
+        friends.push("shomon");
+        console.log(friends)
+
+        // pop method
+        let games = [ "pabji" , "free fire", "shodoco"];
+        games.pop();
+        console.log(games)
+
+
+        // unshift method
+        let number = [24, 36, 48 , 60];
+        number.unshift(12);
+        console.log(number)
+
+
+        // shift method
+        let books = ["A" , "B" , "C" , "D"];
+        books.shift();
+        console.log(books)
+
+
+        // includes method
+        let friend = ["shajib" , "shagor" , "shakib" , "shohel"];
+        let check = friend.includes("rafi")
+        console.log(check)
+
+
+        // includes method to check that certain element is present or not
+        let inc = ["shajib" , "shagor" , "shakib" , "shohel"];
+
+        // let justify = inc.includes("shakib");
+        // console.log(justify)
+        console.log(inc.includes("shakib"))
+
+
+        // includes method with if-else condition
+        let picnic = ["Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+        if (picnic.includes("Farhana")) {
+            console.log("I will go to picnic")
+        }else{
+            console.log("I will not go to picnic")
+        }
+
+
+        // indexof method like includes method 
+        let picnicParty = ["Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+        let isShe = picnicParty.indexOf("Farhana")
+        console.log(isShe)
+        // output : 1 (index number)
+
+        let isHe = picnicParty.indexOf("rafi")
+        console.log(isHe)
+        // output : -1 (index number) if element is not present , this shows -1
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Practice on delet , freeze and seal from ph book -->
+    <script>
+        // basic
+        const emotion = {
+            firstName: "Alamgir",
+            address: "Cumilla",
+            age: 28,
+            game: "cricket",
+            team: "Ajaira",
+        }
+
+        delete emotion.age;
+        console.log(emotion) // output : firstName: "Alamgir", address: "Cumilla", game: "cricket", team: "Ajaira",
+
+        // Object.freeze(emotion); // freeze make it unable to add, change/modify , delet 
+        Object.seal(emotion); // seal allow only to change/modify
+        emotion.status = "single"; 
+        emotion.game = "football";
+        delete emotion.team;
+
+        console.log(emotion) // output : firstName: "Alamgir", address: "Cumilla", game: "football", team: "Ajaira",
+    </script>
+    
+    <script>
+        // task - 1;
+        const headphone = {
+            brand: "sony",
+            price: 3000,
+            color: "red"
+        }
+        Object.freeze(headphone);
+        headphone.bettary = 4000; // this will not be added becouse of freeze
+        console.log(headphone) // output: brand: "sony", price: 3000, color: "red"
+            
+        
+        // task - 3;
+        const book = {
+            title: "Harray potter",
+            author: "JK Rowling",
+            page: 500
+        }
+        Object.seal(book);
+        book.author = "Rowling";
+        console.log(book) // output: title: "Harray potter", author: "Rowling", page: 500
+
+
+        // task - 4;
+        const gadget = {
+            brand: "iphone",
+            price: 120000,
+            color: "red"
+        }
+
+        delete gadget.price;
+        console.log(gadget) // output: brand: "iphone", color: "red"
+    </script>
+</body>
+</html>

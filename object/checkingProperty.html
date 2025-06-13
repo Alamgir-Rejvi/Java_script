@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- practice on how check keys, values , full property in a object -->
+
+
+    <!-- to check or print key of object -->
+    <script>
+        // basic part
+        const player = {
+            name: "Alamgir",
+            age: 28,
+            sports: "cricket",
+            team: "Ajaira",
+        }
+
+        console.log(Object.keys(player)) // to check all keys in object . output will be in array format
+        console.log(Object.values(player)) // to check all values in object . output will be in array format
+
+
+        // checking single key
+        const a = Object.keys(player); // this is for check that a key is included or not by array-includes method. output will be true or false.
+        let hasName = a.includes("name")
+        console.log(hasName);
+
+
+        // another way to check that a key is included or not...
+        if ("brand" in player) {
+            console.log("name is present")
+        } else {
+            console.log("no name key")
+        }
+
+
+        // another way to check that a key is included or not by "hasOwnProperty" method
+        if (player.hasOwnProperty("partner")) {
+            console.log("This key is present")
+        }else{
+            console.log("This key is not present")
+        }
+
+
+
+        // another way to check that a key is included or not by "Object.hasOwn" method
+        if (Object.hasOwn("partner")) {
+            console.log("This key is present")
+        }else{
+            console.log("This key is not present")
+        }
+
+    </script>
+
+
+
+
+    <!-- to check or print value of object -->
+    <script>
+        const gamer = {
+            name: "Alamgir",
+            age: 28,
+            sports: "cricket",
+            team: "Ajaira",
+        }
+
+        // checking single value
+        const b = Object.values(gamer); // this is for check that a values is included or not by array-includes method. output will be true or false.
+        let hasValue = b.includes("Alamgir")
+        console.log(hasValue);
+
+
+
+        // another way to check that a value is included or not...
+        if (gamer.name === "Alamgir") {
+            console.log("value 'Alamgir' is present")
+        } else {
+            console.log("no value about 'Alamgir'")
+        };
+    </script>
+
+
+
+
+    <!-- to check or print full property(key + value) by "entries" method and "loop" -->
+    <script>
+        // method -1 : Object.entries(person);
+        const person = {
+            firstName: "Alamgir",
+            age: 28,
+            game: "cricket",
+            team: "Ajaira",
+        }
+
+        let allProperty = Object.entries(person);
+        console.log(allProperty);
+
+
+
+        // method -2 : for in loop ;
+        for (const key in person) { // this "key" variable take all property name(key) from person object
+            const value = person[key];// here person[key] part refer to all values
+            console.log(key, value) // finally it print both key and value
+        }
+
+
+
+        // method -3 : for of loop used in array format;
+
+        let arr = Object.keys(person); // here "Object.keys(person)" part convert object into array format
+        for (const key of arr) { // this "key" variable take only all property name(key) from person object
+            const value = person[key];// here person[key] part refer to all values
+            console.log(key, value) // finally it print both key and value
+        }
+    </script>
+    
+</body>
+
+</html>

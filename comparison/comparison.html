@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- comparison practice from ph book -->
+    <script>
+        let iAteSandowich = 7; // to find that who ate more...
+        brotherAte = 5;
+        console.log(iAteSandowich > brotherAte); // output : true
+        console.log(iAteSandowich < brotherAte); // output : false . so i ate more
+
+        let myStudent = 45;
+        otherStudent = 50;
+        console.log(myStudent > otherStudent); //  output : false
+
+        let myNumber = 75;
+        friendNumber = 75;
+        console.log(myNumber == friendNumber); // output : true
+
+        let savingTarget = 100;
+        savedTaka = 95;
+        console.log(savedTaka >= savingTarget); //  output : false
+
+        let num1 = 10;
+        num2 = 7;
+        console.log(num1 != num2); // output : true
+
+        console.log(20 <= 15);  //  output : false
+    </script>
+
+
+    <!--more practice -->
+
+    <script>
+        let myAge = 15;
+        brotherAge = 10;
+        console.log( brotherAge <= myAge); // to check brother age is less than or equal?
+        // output : true
+
+        let passMark = 33;
+        iGot = 45;
+        console.log(iGot >= 33); // I passed
+
+        let v1 = "jambora";
+        v2 = "kadbel"; // to check is  the price of jambora is less than kadbel
+        console.log("jambora" > "kadbel");
+
+        let myReadBook = 10;
+        friendReadBook = 10;
+        console.log(myReadBook == friendReadBook);
+    </script>
+
+
+    <!-- "==" vs "===" -->
+
+     <script>
+        console.log(12 == 12); // This "equality operator" will just check the value
+        console.log(12 == "12"); // This "equality oparetor" will just check the value
+        // here output is true 
+
+        console.log(12 === 12); // This "strick equality operator" will check the value and data type...output:true
+        console.log(12 === "12"); // output : false , becouse of different data type
+     </script>
+
+
+
+     <!-- "!=" vs  "!==" , It is same as previous-->
+
+     <script>
+        console.log(12 != 12); // here output is false 
+        console.log(12 != "12"); // here output is false 
+
+        console.log(12 !== 12); // here output is false
+        console.log(12 !== "12"); // here output is true...
+     </script>
+     
+
+     <!-- more practice -->
+     <script>
+        console.log("practice part");
+        console.log(50 == "50"); // output : true
+        console.log(50 === "50"); // output : false
+
+        console.log("Javascript" == "Javascript") // output : true
+        console.log("Javascript" === "Javascript") // output : true
+
+        console.log("test" == "Test"); // case sensitive so output : false
+        console.log("test" === "Test"); // case sensitive so output : false
+
+        let variableX = 15;
+        variableY = "20";
+        console.log(variableX != variableY); // output : true
+        console.log(variableX !== variableY); // output : true
+     </script>
+
+</body>
+</html>

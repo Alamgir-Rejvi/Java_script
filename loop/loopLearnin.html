@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- loop basic practice from ph book -->
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        for (const num of numbers) {
+            console.log(num)
+        }
+    </script>
+
+    <script>
+        // task - 1
+        let subjects = ["ICT", "Math", "English", "Relationship", "Emotion"];
+        for (const print of subjects) {
+            console.log(print)
+        }
+
+        // task - 2
+        let favFood = ["vegitable", "meat", "Anggor", "Nut", "Honey"];
+        for (const food of favFood) {
+            document.write(food + ("<br>") + ("<br>"))
+        }
+
+        //task - 3
+        let years = [1950, 1955, 1970, 1972, 1974];
+        for (const year of years) {
+            console.log(year)
+        }
+    </script>
+
+
+
+    <!-- for loop -->
+    <script>
+        // print number 1-20;
+        for (let i = 1; i <= 20; i++) {
+            document.write(i + ("&nbsp") + ("&nbsp"))
+        }
+
+
+
+
+        document.write(("<br>"));
+        // this task with while loop
+        let i = 1; // while-loop-variable with a initial value
+        while (i <= 20) {   // condition for code execute
+            document.write(i + ("&nbsp") + ("&nbsp")); // code part for repeatation
+            i++;  // doer of repeatation
+        }
+    </script>
+
+
+
+
+    <!-- while loop -->
+     
+    <script>
+        document.write(("<br>"));
+        // sum of 1-10;
+        let number = 1;
+        sumTo = 0; // It is for defining sum presented in code part
+        while (number <= 10) {
+            // document.write(number);
+            sumTo = sumTo + number;
+            number++
+        }
+        document.write("Sum of (1 to 10) = " + sumTo)
+
+
+
+        document.write(("<br>"));
+        // this task with "for loop"
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+        }
+        document.write("Sum of (1 to 10) = " + sum)
+    </script>
+
+
+
+    <!-- practice from Anisul Islam -->
+    <script>
+        document.write(("<br>"));
+        // 2 + 4 + 6....+ 20
+        let num = 2;
+        sum = 0;
+        while (num <= 20) {
+            sum = sum + num;
+            num += 2;
+        }
+        document.write("Sum of even number from 2 to 20 is : " + sum)
+
+
+        // this task with "for loop"
+        document.write(("<br>"));
+        sum = 0;
+        for (let i = 2; i <= 20; i += 2) {
+            sum = sum + i
+        };
+        document.write("Sum of even number from 2 to 20 is : " + sum)
+    </script>
+
+
+
+
+    <!-- Write a program that will print sum of all numbers that are divisible by 3 and 5 from 1 to 100  -->
+     <script>
+        document.write(("<br>"));
+        let numb = 15;
+        sum = 0;
+        while ( numb / 3 && numb / 5 && numb <= 100) {
+            document.write(numb + ("&nbsp") + ("&nbsp"));
+            sum = sum + numb;
+            numb += 15;
+        }
+        document.write(("<br>"));
+        document.write("Sum of these numbers is : "+sum)
+     </script>
+
+
+
+    <!--this program with if condition -->
+     <script>
+        document.write(("<br>"));
+        let numbe = 15;
+        sum = 0;
+        while (numbe <= 100) {
+            if (numbe / 3 && numbe / 5) {
+
+                document.write(numbe + ("&nbsp") + ("&nbsp"));5
+                sum = sum + numbe;
+            };
+            numbe += 15;
+        }
+        document.write(("<br>"));
+        document.write("Sum of these numbers is : "+sum);
+     </script>
+</body>
+
+</html>

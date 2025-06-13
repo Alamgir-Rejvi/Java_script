@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Final Practice on && and || condition -->
+    <script>
+        // task - 01:
+        // if age is more than 18 and height is more than 60,then Gari dhelo . otherwise bosho
+        let age = 30;
+        height = 60;
+
+        if (age > 18 && height > 60) { // both condition have to be fullfill...
+            console.log("Gari dhelo")
+        }else{
+            console.log("Gari te bosho")
+        }; // output : Gari te bosho
+
+
+
+        // task - 02:
+        // if your math score is more than 80 or english score is more than 85 , you will admission otherwise biye dibo.
+        let math = 81;
+        eng = 85;
+        if (math > 80 || eng > 85) { // any one condition has to be fullfill...
+            console.log("You can get admission")
+        }else{
+            console.log("Tomake biye diye dibo")
+        } // output : "You can get admission.
+
+
+        
+        // task - 03:
+        // condition for scholarship: gpa 5 and income less than 10000 tk
+        let gpa = 5;
+        monthlyIncome = 10000;
+        if (gpa == 5 && monthlyIncome < 10000) {
+            console.log("You are qualified for 'Scholarship' ")
+        }else{
+            console.log("You have to pay for study")
+        } // output : You have to pay for study.
+
+
+
+
+        // task - 04:
+        // condition for apply; age is less than 30 and experience should be more than 2 years.
+        let Age = 28;
+        experience = 2.10;
+
+        if( Age < 30 && experience > 2) {
+            console.log("You can apply")
+        } else {
+            console.log("You can not apply")
+        } // output : You can apply
+
+
+        // task - 05:
+        // if egg is more than 12 or not having chiken , then cook korma otherwise kola khao
+        let eggNumber = 11;
+        havingChiken = false;
+        
+        if (eggNumber > 12 || havingChiken == false) {
+            console.log("cook dim er korma")
+        }else{
+            console.log("Paoroti r kola kha")
+        } // output : cook dim er korma...
+
+
+        // task - 06;
+        // condition for exam: attendence is more than 80 % and homework is submitted , otherwise auto fail.
+        let attendence = 70;
+        submittingHomework = true;
+        if (attendence > 80 && submittingHomework == true) {
+            console.log("You can sit for exam")
+        }else{
+            console.log("Auto fail")
+        } // output : Auto fail.
+    </script>
+</body>
+</html>

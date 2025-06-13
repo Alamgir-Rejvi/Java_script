@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    <script src="array.js"></script>
+<body>
+
+    <script>
+        let array1 = ["alamgir", "pull", "push", "rasel", "shifat"]
+
+        let remove = array1.splice(1, 0, "rejvi")
+        console.log(remove)
+
+
+        let array2 = [10, 20, 30] // making square number through map
+        let ansArray = array2.map((Number) => {
+            return Number * Number
+        });
+
+        console.log(ansArray)
+
+
+        let array3 = [10, 20, 30] // adding number into present 
+        array3.map((Number) => {
+            console.log(Number + 1)
+        })
+
+
+        let array4 = [10, 20, 30]
+        array4.map((Number, index) => {
+            console.log(Number);
+            console.log(index);
+        })
+
+
+        let array5 = [10, 20, 30, 11, 33, 39, 40]
+        let even_Array = array5.filter((Number) => {
+            if (Number % 2 === 0) { // set here 1 for odd number.
+                return true;
+            } else {
+                return false;
+            };
+        });
+
+        console.log(even_Array)
+
+
+        let array6 = [10, 20, 30, 11, 33, 39, 40]
+        let evenArray = array6.filter((Number) => {
+            return (Number % 2 === 1) // this is for short without if.
+        });
+
+        console.log(evenArray)
+
+
+
+        let array7 = [2, 3, "Alamgir", "Rejvi", null]
+        let stringArray = array7.filter((value) => {
+            if (typeof (value) == "string") { // here we can filter number by adding "number".
+                return true;
+            } else {
+                return false;
+            }
+        })
+        console.log(stringArray)
+        console.log(array7[2])
+
+
+
+        // using reduce array.
+
+        let array8 = [10, 20, 30, 40, 50]
+
+        let reArray = array8.reduce((acc, curr) => {
+            return acc + curr;
+        }, 0);
+
+        console.log(reArray);
+
+
+        let array9 = [4, 7, 1, 8, 3, 5, 10, 0]
+        array9.sort((a, b) => a - b); // for accending sort.
+
+        console.log(array9);
+
+
+
+        let array10 = [4, 7, 1, 8, 3, 5, 10, 0]
+        array10.sort((a, b) => b - a); // for descending sort.
+
+        console.log(array10);
+        console.log(array10.indexOf(5)); //for finding index position of an item
+
+    </script>
+
+    <script>
+        let numbers = [1,2,3,4];
+        let newArr = numbers.map(function(num) {
+            // return num * 2
+            // return num ** 2
+            return num * num + 1
+        });
+        console.log(newArr)
+
+    </script>
+
 </body>
+
 </html>

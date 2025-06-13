@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // basic practice
+        // task - 1 ;
+        const numbers = [71,72,73,74,75,76,77,78,79];
+
+
+        // task - 2 ;
+        const freeze = ["apple" , "banana" , "komola" , "mango" , "payara"];
+
+
+        // task - 3 ;
+        const bag = ["potato" , "payas" , "begon" , "mola" , "gajor" , "tomato" , "deros" , "lao" , "shosha" , "potol"];
+        // const num = bag.length;
+        // console.log(num)
+        console.log(bag.length);
+        // output : 10;
+
+
+        // task - 4 ;
+        const favCinema = ["tree idiot" , "tere zamin por" , "pk" , "Race3", "Nayok"];
+
+        // task - 5 ;
+        const oddNumbers = [11,13,15,17,19,21,23,25,27,29];
+
+        // task - 6 ;
+        const seeingColors = ["white" , "black" , "voilet" , "red" , "blue" , "green" , "yellew"];
+        const totalColor = seeingColors.length;
+        console.log(totalColor);
+        // output : 7;
+
+
+        // task - 7 ;
+        const capital = ["Dhaka" , "Riyad" , "Istambul" , "male", "dhhfjh" , "fdjjjhdf"];
+        console.log(capital.length);
+    </script>
+
+    <script>
+        //finding value by index...
+        const number = [71,72,73,74,75,76,77,78,79];
+
+        const fourth = number[5];
+        console.log(fourth); // output : 76
+        console.log(number[4]) // output : 75
+
+
+        // to update the value of specific index ...
+        number[3] = 70;
+        console.log(number);
+        // output : [71,72,73,  70  ,75,76,77,78,79];
+    </script>
+
+
+    <!-- Final Practice on index -->
+    <script>
+        let num = [1,2,3,4,5,6,7,8,9];
+
+        num [7] = 30; // to update the value of index 7;
+        console.log(num);
+        // output : [1,2,3,4,5,6,7, 30 ,9];
+
+
+        let country = ["Thailand" , "Switzerland" , "Australia" , "Indonesia" , "Bora Bora" , "Italy", "Turkey"];
+        console.log(country[4]);
+        // output : Bora Bora
+    </script>
+
+
+    <!-- array push and pop -->
+    <!-- push add element at the end of array and pop remove element from the end of array -->
+    <script>
+        let Capital = ["Dhaka" , "Riyad" , "Istambul" , "male", "dhhfjh" , "fdjjjhdf"];
+        Capital.push("paris"); // we can add more element at once...
+        console.log(Capital);
+        // output : ["Dhaka" , "Riyad" , "Istambul" , "male", "dhhfjh" , "fdjjjhdf", "Paris"];
+
+
+
+        let friends = ["Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+        friends.pop(); // here metioning element is not necessary...
+        console.log(friends);
+        // output : ["Alamgir" , "Farhana" , "Nishat" , "Fahim"]
+    </script>
+
+
+
+    <!-- array shift and unshift -->
+    <!-- unshift add element at the start of array and shift remove element from the start of array -->
+    <script>
+        let Friends = ["Ashik" , "Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+        Friends.shift();
+        console.log(Friends);
+        // output : ["Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+
+
+        Friends.unshift("Lucky mem")
+        console.log(Friends);
+        // output : ["Lucky mem", "Alamgir" , "Farhana" , "Nishat" , "Fahim" , "Hares"];
+
+    </script>
+</body>
+</html>

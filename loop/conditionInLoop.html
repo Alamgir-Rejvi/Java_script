@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- if or even/odd condition in loop -->
+    <script>
+        //Findig even number by for loop
+        // method 1
+        for (let i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                document.write(i + ("&nbsp") + ("&nbsp"));
+            };
+        };  
+    </script>
+
+
+    <script>
+        // method 2
+        // for (let even = 2; even <= 10; even = even + 2) {
+        //     document.write( even + ("&nbsp") + ("&nbsp")) // without if condition
+        // };
+    </script>
+
+
+    <script>
+        //Findig odd number by for loop
+        // method 1
+        document.write("<br>");
+        for (let i = 1; i < 10; i++) {
+            if (i % 2 == 1) {
+                document.write(i + ("&nbsp") + ("&nbsp"));
+            }
+        };
+
+
+        
+        // method 2
+        document.write("<br>");
+        for (let i = 1; i < 10; i++) {
+            if (i % 2 != 0) {
+                document.write(i + ("&nbsp") + ("&nbsp"));
+            }
+        };
+
+
+
+        // method 3
+        for (let i = 1; i < 12; i = i + 2) {
+            document.write(i + ("&nbsp") + ("&nbsp")) // without if condition
+        };
+    </script>
+    <script>
+        // finding numbers that are divisible by 5 from 1 to 30.
+        for (let i = 1; i <=30; i++) {
+            if (i % 5 == 0) {
+                console.log(i)
+            }
+        }
+
+        for (let i = 5; i <= 30; i += 5) {
+            console.log(i)
+        }
+    </script>
+</body>
+
+</html>

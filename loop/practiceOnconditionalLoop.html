@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- practice On conditional Loop from ph book -->
+    <script>
+        // task -1;
+        // numbers divisible by 7 from 20 to 50;
+        for (let i = 20; i <= 50; i++) {
+            if (i % 7 == 0) {
+                console.log(i)
+            }
+        } // output : 21,28,35,42,49
+
+
+
+        // task -2;
+        // numbers divisible by 5 and 7 from 40 to 80
+        for (let i = 40; i <= 80; i++) {
+            if (i % 5 == 0 && i % 7 == 0) {
+                console.log(i)
+            }
+        } // output : 70
+
+
+        // task -3;
+        // sum of numbers that are divisible 13 from 1 to 40;
+        let sum = 0;
+        for (let i = 1; i <= 40; i++) {
+            if (i % 13 == 0) {
+                sum = sum + i;
+                // console.log(i)
+            }
+        } console.log(sum);
+
+
+        // task -4;
+        // numbers from 1 to 50 that are increased by 4 each time 
+        for (let i = 1; i <= 50; i += 4) {
+            document.write(i + ("&nbsp"));
+        } 
+
+        // task -5;
+        let number = 0;
+        while (number <= 100) {
+            if (number % 9 == 0 && number % 6) {
+                document.write(number);
+                number++;
+            };
+        };
+
+
+        // task -6;
+        let total = 0;
+        for (let i = 0; i <= 100; i++) {
+            if (i % 3 == 0 && i % 4 == 0) {
+                total = total + i
+            }
+        } console.log(total)
+    </script>
+</body>
+
+</html>
