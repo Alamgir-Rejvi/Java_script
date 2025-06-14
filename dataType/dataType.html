@@ -110,55 +110,7 @@
     </script>
 
 
-    <!-- use of parseFloat -->
-    <script>
-        let number1 =20.23;
-        let number2 =2.43;
-        console.log(parseFloat(number1 * number2))
-
-
-        // use of toFixed for number after decimal...
-        let number3 =20.2345;
-        let number4 =2.4334;
-        let multi = number3 * number4;
-        console.log(multi.toFixed(2)); // by adding toFixed , it will be a string data...
-        console.log(typeof multi.toFixed(2)); // now this is string not number . to convert into number you have to add parseFloat
-        console.log(parseFloat(multi.toFixed(2)));
-        console.log(typeof parseFloat(multi.toFixed(2))); // now this is a number data.
-    </script>
-
-    <!-- more practice on parse -->
-     <script>
-        let num = "20";
-        let newNum = parseInt(num);
-        let total = newNum + 10;
-        console.log(total);
-        console.log(typeof total)
-
-
-        let decimalNum = 3.14159 // i will convert into integer
-        let integerNum = parseInt(decimalNum);
-        console.log(integerNum);
-
-
-        let stringToNum = "premikBoy"; // I try convert  it into number
-        let number = parseInt("premikBoy");
-        console.log(number); // output will be NaN becouse this string is not able to be a number.
-
-        let number5 = 3.456;
-        number6 = 2.789; // here I will make it 2 digit after decimal
-        let sum = number5 + number6;
-        let newSum = parseFloat(sum.toFixed(2));
-        console.log(newSum);
-        console.log(typeof newSum);
-
-
-        let n1 = "56.784";
-        n2 = "12.358"; // here I will convert string into number and make sum and keep 2 digit after decimal;
-        let add = n1 + n2;
-        let Sum = parseFloat(add);
-        console.log(parseFloat(Sum.toFixed(2)));
-     </script>
+    
 </body>
 
 </html>

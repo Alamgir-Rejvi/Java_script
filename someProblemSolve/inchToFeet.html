@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- some example and practice on measurement convert from ph book -->
     <script>
         // convert inch to foot
-        function inchToFoot (inch) {
-            const foot = inch / 12;
-            
-        } 
+        function inchToFoot(inch) {
+            const feet = inch / 12;
+            return feet;
+        }
+        let result = inchToFoot(80);
+        console.log((result.toFixed(2))); // i added "toFixed" to take 2 number after decimal but now this is converted into string type data.
+        console.log(parseFloat(result.toFixed(2))); // parseFloat for converting string to number type data. output : 6.67
+        console.log(typeof parseFloat(result.toFixed(2)))
     </script>
+
+
+
+    <script>
+        // convert inch to foot
+        function inchToFeet(inch) {
+            const feet = parseInt(inch / 12);
+            const inchRemain = parseFloat(inch % 12);
+            const finalFeetInch = feet + " ft " + inchRemain + " inch"
+            return finalFeetInch;
+        }
+        let show = inchToFeet(80);
+        console.log(show); // output : 6 ft 8 inch
+    </script>
+
+
+
+    <script>
+        // mile to kilometer
+        function mileToKm(number) {
+            const km = number * 1.609;
+            return km;
+        }
+        let Km = mileToKm(5);
+        console.log(Km) // output : 8.045
+
+
+
+        // km to mile
+        function kmTomile(number) {
+            const mile = number / 1.609;
+            return mile;
+        }
+        let mile = parseFloat(kmTomile(5).toFixed(2));
+        console.log(mile + " mile");
+    </script>
+
+
+
+    <script>
+        // task - 1 ;
+        function mileToGaj (numbr) {
+            const gaj = numbr * 1760;
+            return gaj;
+        }
+        let gaj = mileToGaj(13);
+        console.log(gaj + " Gaj") // output : 22880 Gaj
+
+
+
+        // task - 2 ;
+        function kilowattToKilocelory (number) {
+            const kk = number * 860;
+            return kk ;
+        }
+        let see = kilowattToKilocelory(5);
+        console.log(see) // output : 4300;
+
+
+
+        // task 3 ;
+        function hourToSecond  (number) {
+            const second = number * 60 * 60;
+            return second;
+        }
+        let input = 5;
+        let secShow =hourToSecond(input);
+        console.log(input + " hours = " + secShow + " seconds");
+
+
+        
+        // task 4;
+        function poundToKilogram (number) {
+            const kilogram = number * 0.453;
+            return kilogram;
+        }
+        let give = 4;
+        let outcome = poundToKilogram(give);
+        console.log(give + " pound = " + outcome + " kilogram");
+    </script>
+
 </html>
