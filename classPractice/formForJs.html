@@ -7,25 +7,33 @@
   </head>
   <body>
     <form action="#" name="f">
-      <label for="name">Name:</label> <br />
+      Name:
       <input type="text" name="n" /> <br />
-      <label for="email">Email:</label> <br />
-      <input type="email" name="email" /> <br />
-      <!-- <label for="address" name="addr">Address:</label><br />
-      <textarea name="addr" id="addr" name="add"></textarea><br /> -->
+      <br />
+      Email:
+      <input type="email" name="e" /> <br />
+      <br />
+      Gender:
+      <input type="radio" name="g" value="male" /> Male
+      <input type="radio" name="g" value="female" /> Female <br />
+      <br />
+
+      <input type="submit" value="Submit" onclick="my_f()" />
       <input type="reset" value="Reset" /> <br />
-      <input type="submit" value="Submit" onclick="my_function" />
     </form>
 
     <script>
-      function my_function() {
+      function my_f() {
         var name = document.f.n.value;
-        var name = document.f.email.value;
+        var email = document.f.e.value;
+        var gender = document.f.g.value;
         doc = open(" ", " ", "width:400px , height : 400px");
         with (doc.document) {
-          write("name:" + name);
+          write("Name:" + name);
           write("<br>");
-          write("email:" + email);
+          write("Email:" + email);
+          write("<br>");
+          write("Gender:" + gender);
           write("<br>");
         }
       }
