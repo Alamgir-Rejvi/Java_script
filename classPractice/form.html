@@ -22,12 +22,21 @@
       </div>
 
       <div>
+        Contact:
+        <input type="text" name="contact" />
+      </div>
+
+      <div>
         Address<br />
         <textarea name="txtAddress"></textarea>
       </div>
       <div>
         Email<br />
         <textarea name="txtEmail"></textarea>
+      </div>
+      <div>
+        Remark:
+        <textarea name="remark" id="remark"></textarea>
       </div>
       <div>
         <div>
@@ -45,13 +54,15 @@
       function dyn_window() {
         var name = document.m.txtName.value;
         var address = document.m.txtAddress.value;
+        var contact = document.m.contact.value;
         var email = document.m.txtEmail.value;
-
+        var remark = document.m.remark.value;
         var radios = document.getElementsByName("rdoSex");
+
         for (var i = 0; i < radios.length; i++) {
           if (radios[i].checked) {
             sex = radios[i].value;
-            break; // যেহেতু একটাই checked হবে, পেয়ে গেলে break করা যায়
+            break;
           }
         }
 
@@ -69,7 +80,9 @@
         with (doc.document) {
           write("Name:" + name + "<br/>");
           write("Address:" + address + "<br/>");
+          write("Contact:" + contact + "<br/>");
           write("Email:" + email + "<br/>");
+          write("Remark:" + remark + "<br/>");
           write("Sex:" + sex + "<br/>");
           write(
             "<input type='button' value='Close me' onclick='self.close();' />"
@@ -78,7 +91,7 @@
             "<input type='button' value='Print' onclick='self.print();' />"
           );
         }
-      } // end the function
+      }
     </script>
   </body>
 </html>
