@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // synchoronous
+      console.log("hi");
+      function longTask() {
+        for (let i = 0; i < 10000; i++) {
+          console.log("Step 2");
+        }
+      }
+      console.log("step 1");
+      longTask();
+      console.log("step 3");
+    </script>
+
+    <script>
+      // asynchoronous
+      console.log("step 1 : start");
+
+      setTimeout(() => {
+        console.log("step 2 : this is asynchronous");
+      }, 5000);
+
+      function longTask() {
+        for (let i = 0; i < 100000; i++) {
+          console.log("Step 2");
+        }
+      }
+
+      console.log("step 3 : end");
+    </script>
+  </body>
+</html>
