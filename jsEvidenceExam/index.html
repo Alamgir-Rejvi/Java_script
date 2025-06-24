@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <style>
+        body {
+            background-color: rgb(187, 196, 226);
+            font-family: sans-serif;
+        }
+
+        form {
+            width: 400px;
+            height: auto;
+            background-color: rgb(50, 173, 132);
+            justify-self: center;
+            padding: 20px;
+        }
+
+        legend {
+            width: 130px;
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgb(55, 19, 156);
+            text-align: center;
+        }
+
+
+        /* css for name, contact input */
+        input.width {
+            width: 340px;
+            height: 30px;
+        }
+
+
+        /* css for gender, course input */
+        input.box {
+            margin-left: 25px;
+            appearance: none;
+            width: 13px;
+            height: 13px;
+            /* border: 2px solid #000; */
+            border-radius: 50%;
+            outline: none;
+            background-color: white;
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+
+        input.box:checked {
+            background-color: blue;
+        }
+
+
+
+        /* css for location */
+        #location {
+            appearance: none;
+            width: 274px;
+            height: 22px;
+            font-size: 15px;
+        }
+
+
+
+        /* css for submit */
+        .sub {
+            appearance: none;
+            width: 360px;
+            height: 26px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" id="exam_form">
+        <fieldset>
+            <legend>Course Form</legend>
+            <label for="name">Name :</label> <br> <br>
+            <input type="text" name="name" class="width"> <br> <br>
+            <label for="contact">Contact :</label> <br> <br>
+            <input type="number" name="contact" class="width"> <br><br>
+            <label for="remark">Remark :</label><br><br>
+            <textarea name="remark" id="remark" rows="3" cols="45"></textarea><br><br>
+            <label for="gender">Gender :</label> <br><br>
+            <input type="radio" name="gender" value="male" class="box"> Male
+            <input type="radio" name="gender" value="female" class="box"> Female
+            <input type="radio" name="gender" value="other" class="box"> Other <br><br>
+            <label for="course">Course :</label> <br><br>
+            <input type="checkbox" name="course" id="course_1" class="box"> NT
+            <input type="checkbox" name="course" id="course_2" class="box"> C+
+            <input type="checkbox" name="course" id="course_3" class="box"> WDPF <br><br>
+            <label for="location">Location :</label>
+            <select name="location" id="location">
+                <option value="dhaka">Dhaka</option>
+                <option value="dhaka">CTG</option>
+                <option value="dhaka">CUMILLA</option>
+            </select> <br><br>
+            <input type="submit" value="Submit" name="btn" id="btn" class="sub">
+        </fieldset>
+    </form>
+
+    <script>
+
+        class myForm {
+            constructor(formData) {
+                for (let [name, value] of formData)
+                this[name] = formData.getAll(name).join(",")
+            }
+
+
+            getData() {
+            
+                var result = "Name is : " + this.name + "<br>";
+                result += "Contact is : " + this.contact + "<br>";
+                result += "Remark is : " + this.remark + "<br>";
+                result += "Gender is : " + this.gender + "<br>";
+                result += "Course is : " + this.course + "<br>";
+                result += "location is : " + this.location + "<br>";
+
+                var show = window.open(" ", " ", "width = 400, height =300");
+                show.document.write(result);
+            }
+
+        }
+
+        exam_form.onsubmit = async (e) => {
+            e.preventDefault();
+            var dom = document.querySelector("#exam_form");
+            var jsForm = new FormData(dom);
+            var myObject = new myForm(jsForm);
+
+            myObject.getData();
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
