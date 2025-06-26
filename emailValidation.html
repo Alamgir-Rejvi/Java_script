@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let emailTest = prompt("enter email");
+        if (emailTest.includes("@") && emailTest.includes(".")) {
+            document.write("Email Address is right")
+        } else {
+            document.write("Email Address is wrong")
+        };
+
+
+        // email validation, using regex:
+        let emailValidation = prompt("Enter email");
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailPattern.test(emailValidation)) {
+            document.write("right");
+        } else {
+            document.write("wrong");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -137,10 +137,40 @@
 
             myObject.getData();
         }
+    </script>
 
 
+    <script>
+        class FormValues {
+            constructor (formdata) {
+                for (let [name,value] of formdata)
+                this[name] = formdata.getAll(name).join(",")
+            }
 
 
+            getData () {
+                var result = "Name : " + this.name + "<br>";
+                result += "Contact : " + this.contact + "<br>";
+                result += "Remark : " + this.remark + "<br>";
+                result += "Gender : " + this.gender + "<br>";
+                result += "Course : " + this.course + "<br>";
+                result += "Location : " + this.location + "<br>";
+
+                var win = window.open (" " , " " , "width = 400,height = 300");
+                win.document.write(result);
+
+            }
+        }
+        
+
+        formname.onsubmit = async (e) => {
+            e.preventDefault();
+            var dom = document.querySelector("#formname");
+            var jsObject = new FormData(dom);
+
+            var myObject = new FormValues (jsObject);
+            myObject.getData();
+        }
     </script>
 </body>
 
