@@ -14,13 +14,13 @@
         form {
             width: 400px;
             height: auto;
-            background-color: rgb(50, 173, 132);
+            background-color: rgb(122, 201, 174);
             justify-self: center;
             padding: 20px;
         }
 
         legend {
-            width: 130px;
+            width: 200px;
             font-size: 20px;
             font-weight: bolder;
             color: rgb(55, 19, 156);
@@ -80,7 +80,7 @@
 
     <form action="#" id="exam_form">
         <fieldset>
-            <legend>Course Form</legend>
+            <legend>Course Registration Form</legend>
             <label for="name">Name :</label> <br> <br>
             <input type="text" name="name" class="width"> <br> <br>
             <label for="contact">Contact :</label> <br> <br>
@@ -92,14 +92,14 @@
             <input type="radio" name="gender" value="female" class="box"> Female
             <input type="radio" name="gender" value="other" class="box"> Other <br><br>
             <label for="course">Course :</label> <br><br>
-            <input type="checkbox" name="course" id="course_1" class="box"> NT
-            <input type="checkbox" name="course" id="course_2" class="box"> C+
-            <input type="checkbox" name="course" id="course_3" class="box"> WDPF <br><br>
+            <input type="checkbox" name="course" id="course_1" value="NT" class="box"> NT
+            <input type="checkbox" name="course" id="course_2" value="C+" class="box"> C+
+            <input type="checkbox" name="course" id="course_3" value="WDPF" class="box"> WDPF <br><br>
             <label for="location">Location :</label>
             <select name="location" id="location">
                 <option value="dhaka">Dhaka</option>
-                <option value="dhaka">CTG</option>
-                <option value="dhaka">CUMILLA</option>
+                <option value="ctg">CTG</option>
+                <option value="cumilla">CUMILLA</option>
             </select> <br><br>
             <input type="submit" value="Submit" name="btn" id="btn" class="sub">
         </fieldset>
@@ -139,6 +139,7 @@
         }
     </script>
 
+<<<<<<< HEAD
 
     <script>
         class FormValues {
@@ -171,7 +172,38 @@
             var myObject = new FormValues (jsObject);
             myObject.getData();
         }
+=======
+>>>>>>> 04d6b0604723297c7d1b92d13de6e0c7ab812f4b
     </script>
+
+
+
+
+    <form action="#">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="name">Name :</label>
+            <input type="text" name="name">
+            <label for="contact">Contact :</label>
+            <input type="number" name="contact">
+            <label for="remark">Remark :</label>
+            <textarea name="remark" id="remark"></textarea>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="gender">
+            <label for="course">Course :</label>
+            <input type="checkbox" name="course" id="course_1">
+            <input type="checkbox" name="course" id="course_2">
+            <input type="checkbox" name="course" id="course_3">
+            <label for="location">Location :</label>
+            <select name="location" id="location">
+                <option value="Dhaka">Dhaka</option>
+                <option value="Cumilla">Cumilla</option>
+                <option value="CTG">CTG</option>
+            </select>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
 </body>
 
 </html>
